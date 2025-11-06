@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Daniel Jacinto Argüellez</title>
+    <style>
+        /* Paleta de colores: Negro (#000000) y Gris Oscuro/Plomo (#525252) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fondo claro para contraste */
+        }
+        .cv-container {
+            max-width: 850px;
+            margin: 30px auto;
+            display: flex; /* Estructura de dos columnas */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilos de la Columna Lateral (Sidebar) - Negro y Gris */
+        .sidebar {
+            width: 35%; /* Más ancho para el diseño */
+            background-color: #000000; /* Fondo Negro */
+            color: #ffffff; /* Texto Blanco */
+            padding: 40px 25px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .profile-photo-container {
+            border-radius: 50%;
+            border: 5px solid #ffffff; /* Borde blanco alrededor de la foto */
+            display: inline-block;
+            margin-bottom: 25px;
+            overflow: hidden;
+            background-color: #525252; /* Color de fondo similar al contorno del CV */
+        }
+        .profile-pic {
+            width: 180px; /* Tamaño de la imagen */
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* La imagen se muestra dentro del contenedor circular */
+            display: block; 
+            opacity: 0.9; /* Simular un tono un poco más oscuro o menos vívido */
+        }
+        
+        /* Estilos del Contenido Principal - Gris y Negro */
+        .main-content {
+            width: 65%;
+            background-color: #ffffff; /* Fondo Blanco para el contenido */
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .header h1 {
+            color: #000000; /* Nombre en Negro */
+            margin: 0 0 5px 0;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .header h2 {
+            color: #525252; /* Título en Gris */
+            margin: 0 0 20px 0;
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+        
+        /* Estilos de Secciones y Títulos */
+        .section-title {
+            color: #525252; /* Títulos de sección en Gris */
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-bottom: 2px solid #525252; /* Línea separadora gris */
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .sidebar h2 {
+            /* Títulos de sección de la barra lateral */
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        /* Estilos de Listas y Texto */
+        .contact-info, .skills-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            font-size: 0.95em;
+        }
+        .contact-info li, .skills-list li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .skills-list li::before {
+            content: "•";
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .text-block p {
+            line-height: 1.6;
+            font-size: 0.95em;
+            text-align: justify;
+        }
+        
+        /* Estilos para Educación */
+        .education strong {
+            display: block;
+            font-size: 1em;
+            color: #000000;
+            margin-bottom: 2px;
+        }
+        .education p {
+            margin: 0;
+            color: #525252;
+            font-size: 0.95em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-photo-container">
+                <img src="imagenes/yo.jpeg" alt="Foto de Daniel Jacinto Argüellez" class="profile-pic">
+            </div>
+
+            <section class="section contact">
+                <h2>CONTACTO</h2>
+                <ul class="contact-info">
+                    <li>📞 5552526844</li>
+                    <li>📧 danielsg692@gmail.com</li>
+                </ul>
+            </section>
+            
+            <section class="section skills">
+                <h2>HABILIDADES</h2>
+                <ul class="skills-list">
+                    <li>Buena comunicacion </li>
+                    <li>Idioma Inglés basico </li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>DANIEL JACINTO ARGUELLEZ</h1>
+                <h2>INGENIERO EN SISTEMAS COMPUTACIONALES </h2>
+            </header>
+            
+            <section class="section about-me">
+                <h3 class="section-title">SOBRE MÍ </h3>
+                <div class="text-block">
+                    <p>Soy una persona proactiva, organizaday responsable , sigo estudiando la ingenieria , soy bueno trabajando en equipo y hablar frente a muchas personas.</p>
+                </div>
+            </section>
+
+            <section class="section experience">
+                <h3 class="section-title">EXPERIENCIA LABORAL </h3>
+                <div class="text-block">
+                    <p>No tengo experiencia laboral dentro del campo ya que aun sigo estudiando la ingenieria en sistema computacionales.</p>
+                </div>
+            </section>
+
+            <section class="section education">
+                <h3 class="section-title">EDUCACIÓN </h3>
+                <div class="education-item">
+                    <strong>Ingeniero en sistema computacionales </strong>
+                    <p>universidad Instituto Tecnologico de Iztapalapa 1 </p>
+                    <p>**En curso** </p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
